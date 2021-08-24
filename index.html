@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/27da7279b0.js" crossorigin="anonymous"></script>
+    <!-- title -->
+    <title>Task Tracker</title>
+    <style>
+        ul li.checked {
+            background-color: rgb(87, 180, 149);
+        text-decoration: line-through;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1 class="fs-1 text-center fw-bolder mt-5" style="color: rgb(6, 77, 121);">Daily Work Schedule <span><i class="fas fa-list-alt"></i></span></h1>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Container for input section -->
+        <div class="container mt-4 w-50">
+            <!-- Taking input as form -->
+            <div class="d-grid gap-2 mb-2">
+                <!-- Date input -->
+                <label for="dateInput" class="form-label fs-4">Enter Date</label>
+                <input type="date" class="form-control mb-3" id="dateInput" placeholder="dd/mm/yy">
+                <input class="text-white fs-5 border rounded" id="dateButton" style="background-color: rgb(43, 103, 139);" type="button" value="Add Date">
+              </div>
+              <div class="mb-3">
+                  <!-- Task Description Input -->
+                <label for="taskInput" class="form-label fs-4">Enter Task</label>
+                <textarea class="form-control mb-3" id="taskInput" rows="3"></textarea>
+                <!-- To-Do list button -->
+                <input id="toDoTask" class="text-white fs-6 border rounded btn-lg px-5" style="background-color: rgb(43, 103, 139);" type="button" value="Add To To-Do List">
+                <!-- Doing list button -->
+                <input id="doingTask" class="text-white fs-6 border rounded btn-lg px-5" style="background-color: rgb(43, 103, 139);" type="button" value="Add To Doing List">
+                <!-- Done list button -->
+                <input id="doneTask" class="text-white fs-6 border rounded btn-lg px-5" style="background-color: rgb(43, 103, 139);" type="button" value="Add To Done List">
+              </div>
+        </div>
+        <!-- Task List Section -->
+        <div class="container w-75 mt-5 mx-auto">
+            <table class="table">
+                
+                <thead>
+                    <tr class="fs-5 text-center">
+                        <th class="table-success" scope="col">Date <i class="far fa-calendar-alt"></i></th>
+                        <th class="table-danger" scope="col">To-Do</th>
+                        <th class="table-warning" scope="col">Doing</th>
+                        <th class="table-info" scope="col">Done</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="fs-5">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+
+    <!-- JS Script of CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- JS script for daily task tracker -->
+    <script src="script.js"></script>
+</body>
+</html>
