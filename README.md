@@ -1,0 +1,2 @@
+# Daily-task-tracker
+This Project lists you daily work routine. At first a date must be added, without adding a date tasks can't be included. after that, you can tasks in three catagories as work to-do, work doing and work done. you can add tasks and dates as many as possible. You can edit tasks to a periviously added date. Double Clicking a date will delete the entire day schedule. clicking on a specific task will cut the task off as taking the work is done.
